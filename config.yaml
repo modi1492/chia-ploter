@@ -185,7 +185,7 @@ jobs:
     bitfield: true
     threads: 8
     buckets: 128
-    memory_buffer: 3390
+    memory_buffer: 3400
     max_concurrent: 1
     max_concurrent_with_start_early: 6
     initial_delay_minutes: 0
@@ -218,7 +218,7 @@ jobs:
     bitfield: true
     threads: 8
     buckets: 128
-    memory_buffer: 3390
+    memory_buffer: 3400
     max_concurrent: 3
     max_concurrent_with_start_early: 8
     initial_delay_minutes: 0
