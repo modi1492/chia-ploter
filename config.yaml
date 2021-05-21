@@ -178,9 +178,9 @@ jobs:
     max_plots: 36
     farmer_public_key:
     pool_public_key:
-    temporary_directory: Z:\Plotter
+    temporary_directory: D:\kk
     temporary2_directory:
-    destination_directory: J:\Plots
+    destination_directory: E:\kuangchi
     size: 32
     bitfield: true
     threads: 8
