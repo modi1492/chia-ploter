@@ -206,6 +206,7 @@ jobs:
     pool_public_key:
     temporary_directory:
       - E:\kk
+      - E:\kk2
     destination_directory:
       - G:\kuangchi
     size: 32
