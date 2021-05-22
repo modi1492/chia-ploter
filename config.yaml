@@ -261,7 +261,7 @@ jobs:
     farmer_public_key:
     pool_public_key:
     temporary_directory:
-      - E:\kk2
+      - E:\kk3
     destination_directory:
       - G:\kuangchi
     size: 32
