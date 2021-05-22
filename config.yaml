@@ -175,17 +175,16 @@ jobs:
   #                      a hyper-threaded 4 core CPU (8 logical cores). This config will restrict plot processes to use
   #                      logical cores 0-5, leaving logical cores 6 and 7 for other processes (6 restricted, 2 free).
   - name: ssd_500g
-    max_plots: 36
+    max_plots: 20
     farmer_public_key:
     pool_public_key:
-    temporary_directory: Z:\Plotter
-    temporary2_directory:
-    destination_directory: J:\Plots
+    temporary_directory: D:\kk
+    destination_directory: F:\kuangchi
     size: 32
     bitfield: true
-    threads: 8
+    threads: 6
     buckets: 128
-    memory_buffer: 3390
+    memory_buffer: 3400
     max_concurrent: 1
     max_concurrent_with_start_early: 6
     initial_delay_minutes: 0
@@ -202,23 +201,18 @@ jobs:
     cpu_affinity: [ 0, 1, 2, 3, 4, 5 ]
 
   - name: ssd_1000g
-    max_plots: 36
+    max_plots: 33
     farmer_public_key:
     pool_public_key:
     temporary_directory:
-      - Y:\Plotter1
-      - Y:\Plotter2
-    temporary2_directory:
-      - J:\Plots
-      - K:\Plots
+      - E:\kk
     destination_directory:
-      - J:\Plots
-      - K:\Plots
+      - G:\kuangchi
     size: 32
     bitfield: true
-    threads: 8
+    threads: 6
     buckets: 128
-    memory_buffer: 3390
+    memory_buffer: 3400
     max_concurrent: 3
     max_concurrent_with_start_early: 8
     initial_delay_minutes: 0
