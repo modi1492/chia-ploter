@@ -182,11 +182,11 @@ jobs:
     destination_directory: F:\kuangchi
     size: 32
     bitfield: true
-    threads: 6
+    threads: 2
     buckets: 128
     memory_buffer: 3400
     max_concurrent: 1
-    max_concurrent_with_start_early: 6
+    max_concurrent_with_start_early: 2
     initial_delay_minutes: 0
     stagger_minutes: 60
     max_for_phase_1: 1
@@ -200,25 +200,80 @@ jobs:
     enable_cpu_affinity: false
     cpu_affinity: [ 0, 1, 2, 3, 4, 5 ]
 
-  - name: ssd_1000g
-    max_plots: 33
+  - name: ssd_1000g_1
+    max_plots: 10
     farmer_public_key:
     pool_public_key:
     temporary_directory:
       - E:\kk
+    destination_directory:
+      - G:\kuangchi
+    size: 32
+    bitfield: true
+    threads: 2
+    buckets: 128
+    memory_buffer: 3400
+    max_concurrent: 1
+    max_concurrent_with_start_early: 2
+    initial_delay_minutes: 0
+    stagger_minutes: 180
+    max_for_phase_1: 1
+    concurrency_start_early_phase: 4
+    concurrency_start_early_phase_delay: 0
+    temporary2_destination_sync: false
+    exclude_final_directory: false
+    skip_full_destinations: true
+    unix_process_priority: 10
+    windows_process_priority: 32
+    enable_cpu_affinity: false
+    cpu_affinity: [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23 ]
+
+  - name: ssd_1000g_2
+    max_plots: 10
+    farmer_public_key:
+    pool_public_key:
+    temporary_directory:
       - E:\kk2
     destination_directory:
       - G:\kuangchi
     size: 32
     bitfield: true
-    threads: 6
+    threads: 2
     buckets: 128
     memory_buffer: 3400
-    max_concurrent: 3
-    max_concurrent_with_start_early: 8
+    max_concurrent: 1
+    max_concurrent_with_start_early: 2
     initial_delay_minutes: 0
     stagger_minutes: 180
-    max_for_phase_1: 3
+    max_for_phase_1: 1
+    concurrency_start_early_phase: 4
+    concurrency_start_early_phase_delay: 0
+    temporary2_destination_sync: false
+    exclude_final_directory: false
+    skip_full_destinations: true
+    unix_process_priority: 10
+    windows_process_priority: 32
+    enable_cpu_affinity: false
+    cpu_affinity: [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23 ]
+
+  - name: ssd_1000g_3
+    max_plots: 10
+    farmer_public_key:
+    pool_public_key:
+    temporary_directory:
+      - E:\kk2
+    destination_directory:
+      - G:\kuangchi
+    size: 32
+    bitfield: true
+    threads: 2
+    buckets: 128
+    memory_buffer: 3400
+    max_concurrent: 1
+    max_concurrent_with_start_early: 2
+    initial_delay_minutes: 0
+    stagger_minutes: 180
+    max_for_phase_1: 1
     concurrency_start_early_phase: 4
     concurrency_start_early_phase_delay: 0
     temporary2_destination_sync: false
