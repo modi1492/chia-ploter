@@ -4,7 +4,7 @@
 #   LINUX EXAMPLE: /usr/lib/chia-blockchain/resources/app.asar.unpacked/daemon/chia
 #  LINUX2 EXAMPLE: /home/swar/chia-blockchain/venv/bin/chia
 #  MAC OS EXAMPLE: /Applications/Chia.app/Contents/Resources/app.asar.unpacked/daemon/chia
-chia_location: C:\Users\cmd00001\AppData\Local\chia-blockchain\app-1.1.5\resources\app.asar.unpacked\daemon\chia.exe
+chia_location: C:\Users\cmd00003\AppData\Local\chia-blockchain\app-1.1.5\resources\app.asar.unpacked\daemon\chia.exe
 
 
 manager:
@@ -105,9 +105,9 @@ global:
   # minimum_minutes_between_jobs: The minimum number of minutes before starting a new plotting job, this prevents
   #                               multiple jobs from starting at the exact same time. This will alleviate congestion
   #                               on destination drive. Set to 0 to disable.
-  max_concurrent: 14
+  max_concurrent: 12
   max_for_phase_1: 4
-  minimum_minutes_between_jobs: 5
+  minimum_minutes_between_jobs: 0
 
 
 jobs:
@@ -175,21 +175,20 @@ jobs:
   #                      a hyper-threaded 4 core CPU (8 logical cores). This config will restrict plot processes to use
   #                      logical cores 0-5, leaving logical cores 6 and 7 for other processes (6 restricted, 2 free).
   - name: ssd_500g
-    max_plots: 36
+    max_plots: 20
     farmer_public_key:
     pool_public_key:
-    temporary_directory: Z:\Plotter
-    temporary2_directory:
-    destination_directory: J:\Plots
+    temporary_directory: D:\kk
+    destination_directory: F:\kuangchi
     size: 32
     bitfield: true
-    threads: 8
+    threads: 2
     buckets: 128
-    memory_buffer: 3390
+    memory_buffer: 3400
     max_concurrent: 1
-    max_concurrent_with_start_early: 6
+    max_concurrent_with_start_early: 2
     initial_delay_minutes: 0
-    stagger_minutes: 60
+    stagger_minutes: 2
     max_for_phase_1: 1
     concurrency_start_early_phase: 4
     concurrency_start_early_phase_delay: 0
@@ -202,27 +201,22 @@ jobs:
     cpu_affinity: [ 0, 1, 2, 3, 4, 5 ]
 
   - name: ssd_1000g
-    max_plots: 36
+    max_plots: 30
     farmer_public_key:
     pool_public_key:
     temporary_directory:
-      - Y:\Plotter1
-      - Y:\Plotter2
-    temporary2_directory:
-      - J:\Plots
-      - K:\Plots
+      - E:\kk
     destination_directory:
-      - J:\Plots
-      - K:\Plots
+      - G:\kuangchi
     size: 32
     bitfield: true
-    threads: 8
+    threads: 2
     buckets: 128
-    memory_buffer: 3390
+    memory_buffer: 3400
     max_concurrent: 3
-    max_concurrent_with_start_early: 8
+    max_concurrent_with_start_early: 4
     initial_delay_minutes: 0
-    stagger_minutes: 180
+    stagger_minutes: 10
     max_for_phase_1: 3
     concurrency_start_early_phase: 4
     concurrency_start_early_phase_delay: 0
