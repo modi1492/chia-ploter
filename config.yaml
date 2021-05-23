@@ -214,9 +214,9 @@ jobs:
     buckets: 128
     memory_buffer: 3400
     max_concurrent: 3
-    max_concurrent_with_start_early: 5
+    max_concurrent_with_start_early: 6
     initial_delay_minutes: 0
-    stagger_minutes: 10
+    stagger_minutes: 60
     max_for_phase_1: 3
     concurrency_start_early_phase: 4
     concurrency_start_early_phase_delay: 0
