@@ -178,8 +178,8 @@ jobs:
     max_plots: 20
     farmer_public_key:
     pool_public_key:
-    temporary_directory: D:\kk
-    destination_directory: F:\kuangchi
+    temporary_directory: E:\kk
+    destination_directory: G:\kuangchi
     size: 32
     bitfield: true
     threads: 2
@@ -205,9 +205,9 @@ jobs:
     farmer_public_key:
     pool_public_key:
     temporary_directory:
-      - E:\kk
+      - F:\kk
     destination_directory:
-      - G:\kuangchi
+      - H:\kuangchi
     size: 32
     bitfield: true
     threads: 2
