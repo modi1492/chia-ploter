@@ -107,7 +107,7 @@ global:
   #                               on destination drive. Set to 0 to disable.
   max_concurrent: 14
   max_for_phase_1: 4
-  minimum_minutes_between_jobs: 70
+  minimum_minutes_between_jobs: 60
 
 
 jobs:
@@ -179,7 +179,7 @@ jobs:
     farmer_public_key:
     pool_public_key:
     temporary_directory: D:\kk
-    destination_directory: F:\kuangchi
+    destination_directory: E:\tmp
     size: 32
     bitfield: true
     threads: 2
@@ -207,17 +207,17 @@ jobs:
     temporary_directory:
       - E:\kk
     destination_directory:
-      - F:\kuangchi
+      - E:\tmp
     size: 32
     bitfield: true
     threads: 2
     buckets: 128
     memory_buffer: 3400
-    max_concurrent: 3
+    max_concurrent: 2
     max_concurrent_with_start_early: 6
     initial_delay_minutes: 0
     stagger_minutes: 30
-    max_for_phase_1: 3
+    max_for_phase_1: 2
     concurrency_start_early_phase: 4
     concurrency_start_early_phase_delay: 0
     temporary2_destination_sync: false
