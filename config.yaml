@@ -107,7 +107,7 @@ global:
   #                               on destination drive. Set to 0 to disable.
   max_concurrent: 14
   max_for_phase_1: 4
-  minimum_minutes_between_jobs: 0
+  minimum_minutes_between_jobs: 70
 
 
 jobs:
@@ -207,7 +207,7 @@ jobs:
     temporary_directory:
       - E:\kk
     destination_directory:
-      - G:\kuangchi
+      - F:\kuangchi
     size: 32
     bitfield: true
     threads: 2
@@ -216,7 +216,7 @@ jobs:
     max_concurrent: 3
     max_concurrent_with_start_early: 6
     initial_delay_minutes: 0
-    stagger_minutes: 20
+    stagger_minutes: 30
     max_for_phase_1: 3
     concurrency_start_early_phase: 4
     concurrency_start_early_phase_delay: 0
